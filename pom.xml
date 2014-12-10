@@ -5,7 +5,7 @@
 
 	<groupId>com.github.davidmoten</groupId>
 	<artifactId>sonatype-parent</artifactId>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 
 	<name>${project.artifactId}</name>
 	<description>Parent pom to ease deployment to Maven Central</description>
@@ -55,7 +55,7 @@
 		<connection>scm:git:git@github.com:davidmoten/sonatype-parent.git</connection>
 		<developerConnection>scm:git:git@github.com:davidmoten/sonatype-parent.git</developerConnection>
 		<url>scm:git:git@github.com:davidmoten/sonatype-parent.git</url>
-	  <tag>0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 
