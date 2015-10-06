@@ -5,7 +5,7 @@
 
 	<groupId>com.github.davidmoten</groupId>
 	<artifactId>sonatype-parent</artifactId>
-	<version>0.2</version>
+	<version>0.2-SNAPSHOT</version>
 
 	<name>${project.artifactId}</name>
 	<description>Parent pom to ease deployment to Maven Central</description>
@@ -14,8 +14,9 @@
 	<url>http://github.com/davidmoten/sonatype-parent</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <scm.url>scm:git:https://github.com/davidmoten/sonatype-parent.git</scm.url>
 	</properties>
 
 	<licenses>
@@ -52,9 +53,9 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git@github.com:davidmoten/sonatype-parent.git</connection>
-		<developerConnection>scm:git:git@github.com:davidmoten/sonatype-parent.git</developerConnection>
-		<url>scm:git:git@github.com:davidmoten/sonatype-parent.git</url>
+		<connection>${scm.url}</connection>
+		<developerConnection>${scm.url}</developerConnection>
+		<url>${scm.url}</url>
 	  <tag>0.2</tag>
   </scm>
 
