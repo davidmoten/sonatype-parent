@@ -27,3 +27,24 @@ mvn release:prepare && mvn release:perform
 ```
 
 You will be prompted for versions.
+
+My preference is to use this bash function in my `.bashrc`:
+
+```bash
+function release() {
+  RELEASE_VERSION=$1
+  GPG_PASSPHRASE=$2
+  mvn --batch-mode release:prepare \
+    -Dtag=$RELEASE_VERSION \
+    -DreleaseVersion=$RELEASE_VERSION \
+    -DdevelopmentVersion=$RELEASE_VERSION.1 \
+    -DautoVersionSubmodules=true \
+    -Darguments=-Dgpg.passphrase=$GPG_PASSPHRASE && \
+  mvn --batch-mode release:perform \
+    -Darguments=-Dgpg.passphrase=$GPG_PASSPHRASE
+}
+```
+ which is called like this:
+ ```bash
+ release 0.4 <GPG_PASSPHRASE>
+ ```
