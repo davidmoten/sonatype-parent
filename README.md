@@ -50,7 +50,7 @@ gpg --gen-key
 ```
 Follow the prompts and select `RSA and RSA (default)`, 4096 bits and whatever expiry you desire.
 
-Now publish your public gpg key so the world can use them to verify your artifacts:
+Now publish your public gpg key so the world can use it to verify your artifacts:
 
 TODO
 
