@@ -5,13 +5,15 @@ sonatype-parent
 
 Parent pom.xml to ease deployment to Maven Central
 
+I've been using this for years now and have made hundreds of releases to Maven Central with one line commands. Enjoy!
+
 Getting started
 ----------------
 Add this parent to your pom.xml:
 
 ```xml
 <parent>
-	<groupId>com.github.davidmoten</groupId>
+    <groupId>com.github.davidmoten</groupId>
     <artifactId>sonatype-parent</artifactId>
     <version>0.1</version>
 </parent>
