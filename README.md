@@ -45,13 +45,14 @@ sudo apt-get update && sudo apt-get install gpg
 
 Now create your gpg keys:
 
+```bash
+gpg --gen-key
+```
+Follow the prompts and select `RSA and RSA (default)`, 4096 bits and whatever expiry you desire.
+
+Now publish your public gpg key so the world can use them to verify your artifacts:
+
 TODO
-
-Now publish your gpg keys so the world can use them to verify your artifacts:
-
-TODO
-
-http://central.sonatype.org/pages/apache-maven.html
 
 Now you can release in one command line to Maven Central:
 
@@ -81,3 +82,7 @@ function release() {
  ```bash
  release 0.4 <GPG_PASSPHRASE>
  ```
+
+Source
+-----------
+Some of the above details are from http://central.sonatype.org/pages/apache-maven.html
