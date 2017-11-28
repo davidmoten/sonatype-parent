@@ -21,8 +21,39 @@ Add this parent to your pom.xml:
 
 Releasing
 ----------
+You'll need an account with Sonatype (they manage Maven Central). Go [here](http://central.sonatype.org/pages/ossrh-guide.html) to set one up.
 
-Once you have your settings.xml sorted (a `<server>` entry with your sonatype account credentials) and your gpg keys as per http://central.sonatype.org/pages/apache-maven.html, you can release in one command line to Maven Central:
+Once you have your account credentials (username and password) you put them in `~/.m2/settings.xml` in a server section:
+
+```xml
+<servers>
+    <server>
+        <id>ossrh</id>
+        <username>YOUR_USERNAME</username>
+        <password>YOUR_PASSWORD</password>
+    </server>
+...
+</servers>
+```
+You can encrypt the password field in `settings.xml` by following [this guide](https://maven.apache.org/guides/mini/guide-encryption.html).
+
+Next you need the `gpg` client installed. On Ubuntu:
+
+```bash
+sudo apt-get update && sudo apt-get install gpg
+```
+
+Now create your gpg keys:
+
+TODO
+
+Now publish your gpg keys so the world can use them to verify your artifacts:
+
+TODO
+
+http://central.sonatype.org/pages/apache-maven.html
+
+Now you can release in one command line to Maven Central:
 
 ```bash
 mvn release:prepare && mvn release:perform
