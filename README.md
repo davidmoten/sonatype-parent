@@ -22,7 +22,7 @@ Add this parent to your pom.xml:
 Releasing
 ----------
 
-Once you have your settings.xml sorted and your gpg keys as per http://central.sonatype.org/pages/apache-maven.html, you can release in one command line to Maven Central:
+Once you have your settings.xml sorted (a `<server>` entry with your sonatype account credentials) and your gpg keys as per http://central.sonatype.org/pages/apache-maven.html, you can release in one command line to Maven Central:
 
 ```bash
 mvn release:prepare && mvn release:perform
