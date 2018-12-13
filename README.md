@@ -7,6 +7,8 @@ Parent pom.xml to ease deployment to Maven Central
 
 I've been using this for years now and have made hundreds of releases to Maven Central with one line commands. Enjoy!
 
+Update: December 2018, still going strong, I release nearly every week with this.
+
 Getting started
 ----------------
 Add this parent to your pom.xml:
