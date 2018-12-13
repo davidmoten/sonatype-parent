@@ -76,6 +76,7 @@ function release() {
     -Darguments=-Dgpg.passphrase=$GPG_PASSPHRASE && \
   mvn --batch-mode release:perform \
     -Darguments=-Dgpg.passphrase=$GPG_PASSPHRASE
+  git push
 }
 ```
  which is called like this:
