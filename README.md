@@ -70,6 +70,7 @@ My preference is to use this bash function in my `.bashrc`:
 function release() {
   RELEASE_VERSION=$1
   GPG_PASSPHRASE=$2
+  mvn release:clean
   mvn --batch-mode release:prepare \
     -Dtag=$RELEASE_VERSION \
     -DreleaseVersion=$RELEASE_VERSION \
