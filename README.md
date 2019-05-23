@@ -126,7 +126,7 @@ uid                  David Moten <davidmoten@gmail.com>
 sub   4096R/AB192E0C 2019-05-23
 $ gpg --armor --export  93C61F1A >mykey.asc
 ```
-Go to http://pgp.mit.edu/ and submit the contents of `mykey.asc`.
+Go to https://pgp.mit.edu/ and submit the contents of `mykey.asc`.
 
 ### Release with Maven
 Now you can release in one command line to Maven Central:
