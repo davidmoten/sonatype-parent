@@ -42,7 +42,7 @@ You can encrypt the password field in `settings.xml` by following [this guide](h
 Next you need the `gpg` client installed. On Ubuntu:
 
 ```bash
-sudo apt-get update && sudo apt-get install gpg
+sudo apt-get update && sudo apt-get install gnupg
 ```
 
 Now create your gpg keys:
