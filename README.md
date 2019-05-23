@@ -23,6 +23,8 @@ Add this parent to your pom.xml:
 
 Releasing
 ----------
+
+### Create a Sonatype account and configure Maven to use it
 You'll need an account with Sonatype (they manage Maven Central). Go [here](http://central.sonatype.org/pages/ossrh-guide.html) to set one up.
 
 Once you have your account credentials (username and password) you put them in `~/.m2/settings.xml` in a server section:
@@ -39,6 +41,7 @@ Once you have your account credentials (username and password) you put them in `
 ```
 You can encrypt the password field in `settings.xml` by following [this guide](https://maven.apache.org/guides/mini/guide-encryption.html).
 
+### Create a gpg key
 Next you need the `gpg` client installed. On Ubuntu:
 
 ```bash
@@ -53,7 +56,7 @@ gpg --gen-key
 Follow the prompts and select `RSA and RSA (default)`, 4096 bits and whatever expiry you desire.
 
 ```bash
-dxm@ubuntu:~/Development/ide/eclipse/workspace/commons-csv (master)$ gpg --gen-key
+$ gpg --gen-key
 gpg (GnuPG) 1.4.20; Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -99,10 +102,6 @@ some other action (type on the keyboard, move the mouse, utilize the
 disks) during the prime generation; this gives the random number
 generator a better chance to gain enough entropy.
 +++++
-
-Not enough random bytes available.  Please do some other work to give
-the OS a chance to collect more entropy! (Need 182 more bytes)
-..+++++
 gpg: /home/dxm/.gnupg/trustdb.gpg: trustdb created
 gpg: key 93C61F1A marked as ultimately trusted
 public and secret key created and signed.
@@ -114,7 +113,6 @@ pub   4096R/93C61F1A 2019-05-23
       Key fingerprint = 4327 D3E9 B7CC A1A9 D8F7  6805 1B18 2CFB 93C6 1F1A
 uid                  David Moten <davidmoten@gmail.com>
 sub   4096R/AB192E0C 2019-05-23
-
 ```
 
 Now publish your public gpg key so the world can use it to verify your artifacts:
@@ -130,6 +128,7 @@ $ gpg --armor --export  93C61F1A >mykey.asc
 ```
 Open https://keyserver.pgp.com in the browser and upload your public key `mykey.asc`.
 
+### Release with Maven
 Now you can release in one command line to Maven Central:
 
 ```bash
