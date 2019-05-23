@@ -124,7 +124,9 @@ uid                  David Moten <davidmoten@gmail.com>
 sub   4096R/AB192E0C 2019-05-23
 $ gpg --armor --export  93C61F1A >mykey.asc
 ```
-Go to https://pgp.mit.edu/ and submit the contents of `mykey.asc`. Now your public gpg key has been published so the world can use it to verify your artifacts.
+Go to https://pgp.mit.edu/ and submit the contents of `mykey.asc`. Now your public gpg key has been published so the world can use it to verify your artifacts. 
+
+**Note**: you may have to wait up to a day for the world's gpg servers to synchronize with the gpg server you submitted to.
 
 ### Release with Maven
 Now you can release in one command line to Maven Central:
