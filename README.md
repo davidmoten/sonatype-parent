@@ -119,7 +119,16 @@ sub   4096R/AB192E0C 2019-05-23
 
 Now publish your public gpg key so the world can use it to verify your artifacts:
 
-TODO
+```bash
+$ gpg --list-keys
+/home/dxm/.gnupg/pubring.gpg
+----------------------------
+pub   4096R/93C61F1A 2019-05-23
+uid                  David Moten <davidmoten@gmail.com>
+sub   4096R/AB192E0C 2019-05-23
+$ gpg --armor --export  93C61F1A >mykey.asc
+```
+Open https://keyserver.pgp.com in the browser and upload your public key `mykey.asc`.
 
 Now you can release in one command line to Maven Central:
 
