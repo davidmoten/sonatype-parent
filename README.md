@@ -126,7 +126,7 @@ uid                  David Moten <davidmoten@gmail.com>
 sub   4096R/AB192E0C 2019-05-23
 $ gpg --armor --export  93C61F1A >mykey.asc
 ```
-Open https://keyserver.pgp.com in the browser and upload your public key `mykey.asc`.
+Open https://keyserver.pgp.com in the browser and upload your public key `mykey.asc`. You'll be asked to verify your email address (check your inbox). 
 
 ### Release with Maven
 Now you can release in one command line to Maven Central:
