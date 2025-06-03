@@ -17,7 +17,7 @@ Add this parent to your pom.xml:
 <parent>
     <groupId>com.github.davidmoten</groupId>
     <artifactId>sonatype-parent</artifactId>
-    <version>0.1</version>
+    <version>VERSION_HERE</version>
 </parent>
 ```
 
