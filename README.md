@@ -1,6 +1,5 @@
 sonatype-parent
 ===============
-<a href="https://travis-ci.org/davidmoten/sonatype-parent"><img src="https://travis-ci.org/davidmoten/sonatype-parent.svg"/></a><br/>
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.davidmoten/sonatype-parent/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.github.davidmoten/sonatype-parent)
 
 Parent pom.xml to ease deployment to Maven Central
