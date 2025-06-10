@@ -25,14 +25,14 @@ Releasing
 ----------
 
 ### Create a Sonatype account and configure Maven to use it
-You'll need an account with Sonatype (they manage Maven Central). Go [here](http://central.sonatype.org/pages/ossrh-guide.html) to set one up.
+You'll need an account with Sonatype (they manage Maven Central). Create an account or sign in [here](https://central.sonatype.com/) to set one up.
 
 Once you have your account credentials (username and password) you put them in `~/.m2/settings.xml` in a server section:
 
 ```xml
 <servers>
     <server>
-        <id>ossrh</id>
+        <id>central</id>
         <username>YOUR_USERNAME</username>
         <password>YOUR_PASSWORD</password>
     </server>
