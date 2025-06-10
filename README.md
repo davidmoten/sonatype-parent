@@ -5,7 +5,7 @@ sonatype-parent
 
 Parent pom.xml to ease deployment to Maven Central
 
-I've been using this for years now and have made hundreds of releases to Maven Central with one line commands across some 40 different open source projects. Enjoy!
+I've been using this since 2014 and have made hundreds of releases to Maven Central with one line commands across some >50 different open source projects. Enjoy!
 
 Update:  June 2025, now using non-legacy publishing, still going strong, I release nearly every week with this.
 
