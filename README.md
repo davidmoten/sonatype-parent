@@ -7,7 +7,7 @@ Parent pom.xml to ease deployment to Maven Central
 
 I've been using this for years now and have made hundreds of releases to Maven Central with one line commands across some 40 different open source projects. Enjoy!
 
-Update: December 2018, still going strong, I release nearly every week with this.
+Update:  June 2025, now using non-legacy publishing, still going strong, I release nearly every week with this.
 
 Getting started
 ----------------
