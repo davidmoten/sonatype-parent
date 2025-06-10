@@ -28,11 +28,6 @@
         </license>
     </licenses>
 
-    <ciManagement>
-        <system>Travis</system>
-        <url>https://travis-ci.org/davidmoten/sonatype-parent</url>
-    </ciManagement>
-
     <issueManagement>
         <system>GitHub</system>
         <url>https://github.com/davidmoten/sonatype-parent/issues</url>
